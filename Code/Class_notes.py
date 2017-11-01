@@ -21,3 +21,28 @@ test_thing_3
   
 test_all()
 
+# Testing Modularity
+Application
+  author.py
+  author_test.py
+  article.py
+  article_test.py
+  comments.py
+  comments_test.py
+  
+# Testing Template
+  test_one_thing
+    t = test_object
+    x = process(t)
+    answer = correct_answer
+    assert( x == answer)
+    
+ # Testing Exceptions
+test_for_exception
+  try
+    t = test_object
+    x = process(t)
+    answer = correct_answer
+    assert(False)
+  catch
+    pass
