@@ -46,3 +46,8 @@ test_for_exception
     assert(False)
   catch
     pass
+#
+def test_num_files():
+  n = shell ('find ..')
+  assert (800 < n and n < 1000)
+  
